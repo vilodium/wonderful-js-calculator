@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Wonderful JS Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="main-container">
+		<!-- Head container -->
+		<div id="head-container">
+			<!-- Title With Bolded Text, Shell Like Ending -->
+			<p id="title" class="title">
+				<span class="title-bold">Wonderful JS Calculator V1.1</span> <span class="title-shell-like"><b>$></b></span><span class="title-shell-like-end">_</span>
+			</p>
+			<!-- // Title // -->
+		</div>
+		<!-- // Head // -->
+		<!-- // ---- // -->
+
+	<!-- Calculator -->
+	<br>
+    <div class= "calculator">  
+    	<form name="calc_form">
+    		<div class="calculator-screen">
+				<input id="calc" type="text" name="result"> <br><br>
+			</div>
+
+			<div class="calculator-buttons">
+				<input type="button" value="1" onclick="calc_form.result.value+='1'">  
+				<input type="button" value="2" onclick="calc_form.result.value+='2'">  
+				<input type="button" value="3" onclick="calc_form.result.value+='3'">
+				<input type="button" value="." onclick="calc_form.result.value+='.'">  
+				&nbsp&nbsp&nbsp
+ 				<input type="button" value="Clear" onclick="calc_form.result.value=' '" id= "clear">
+         		<br><br>
+
+				<input type="button" value="4" onclick="calc_form.result.value+='4'">  
+				<input type="button" value="5" onclick="calc_form.result.value+='5'">  
+				<input type="button" value="6" onclick="calc_form.result.value+='6'">
+				<input type="button" value="0" onclick="calc_form.result.value+='0'"> 
+				&nbsp&nbsp&nbsp&nbsp
+				<span class="made-by">Made using pure love(and some js.)</span> 
+         		<br><br>
+
+				<input type="button" value="7" onclick="calc_form.result.value+='7'">  
+				<input type="button" value="8" onclick="calc_form.result.value+='8'">  
+				<input type="button" value="9" onclick="calc_form.result.value+='9'">
+				<input type="button" value="=" onclick="calc_form.result.value=eval(calc_form.result.value)">    
+				  
+				&nbsp&nbsp&nbsp
+				<input type="button" value="/" onclick="calc_form.result.value+='/'">  
+				<input type="button" value="-" onclick="calc_form.result.value+='-'">
+  				<input type="button" value="+" onclick="calc_form.result.value+='+'">
+				<input type="button" value="*" onclick="calc_form.result.value+='*'">
+         		<br><br>
+      		</div>
+        
+    	</form>  
+    </div>
+    <style>
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+	</style>
+    <!-- MADE BY VILODIUM -->
+</body>
+</html>
